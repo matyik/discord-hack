@@ -24,7 +24,7 @@ chrome.webRequest.onSendHeaders.addListener(
     return { requestHeaders: details.requestHeaders }
   },
   {
-    urls: ['*://*.discord.com/api/v9/*']
+    urls: ['*://*.discord.com/api/v9/channels/*']
   },
   ['requestHeaders']
 )
