@@ -1,0 +1,23 @@
+{
+  "name": "Discord Proximity Chat",
+  "description": "Use proximity through discord with a variety of games, including Among Us!",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "hello.html"
+  },
+  "permissions": ["webRequest", "webRequestBlocking", "*://*.discord.com/"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "manifest_version": 2,
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Opens hello.html"
+    }
+  }
+}
